@@ -1,0 +1,17 @@
+// Project: High-Speed Blinking LED
+// Circuit Simulator: Wokwi
+// Circuit Hardware Builder: Savannah
+// Code Source: Based on the open-source Arduino Blink template, modified by me.
+//
+// What I did: I modified the delay timers from 500ms down to 50ms 
+// to significantly increase the blinking frequency of the LED.
+void setup() {
+  pinMode(13, OUTPUT); // Tell Arduino Pin 13 is the power source
+}
+
+void loop() {
+  digitalWrite(13, HIGH); // Turn LED on
+  delay(50);             // Wait 50 milliseconds
+  digitalWrite(13, LOW);  // Turn LED off
+  delay(50);             // Wait 50 milliseconds
+}
